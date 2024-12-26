@@ -1,7 +1,13 @@
 # WERWOLF GAME
 
 ## DESCRIPTION
-Simple GUI for the game werewolf made in c++ and raylib
+Simple GUI for the game [werewolf](https://en.wikipedia.org/wiki/Mafia_(party_game)) that I 
+made in c++ and raylib. My family plays it a lot over the holidays 
+and people complain about the "narrator" of the game not making 
+truly random decisions. They also wanted something graphical to display
+the choices to make it easier and being the good son I am i made this crappy
+project to make the game a little easier. 
+
 
 
 ## File Table
