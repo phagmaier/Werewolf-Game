@@ -1,7 +1,8 @@
 CMakeFiles/runme.dir/src/Selector.cpp.o: \
- /home/phagmaier/Desktop/Code/Game/src/Selector.cpp \
+ /home/phagmaier/Desktop/Code/Werewolf/src/Selector.cpp \
  /usr/include/stdc-predef.h \
- /home/phagmaier/Desktop/Code/Game/src/Selector.h /usr/include/raylib.h \
+ /home/phagmaier/Desktop/Code/Werewolf/src/Selector.h \
+ /usr/include/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
  /usr/include/c++/14.2.1/random \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \

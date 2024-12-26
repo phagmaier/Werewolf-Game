@@ -1,7 +1,7 @@
 CMakeFiles/runme.dir/src/Player.cpp.o: \
- /home/phagmaier/Desktop/Code/Game/src/Player.cpp \
+ /home/phagmaier/Desktop/Code/Werewolf/src/Player.cpp \
  /usr/include/stdc-predef.h \
- /home/phagmaier/Desktop/Code/Game/src/Player.h /usr/include/raylib.h \
+ /home/phagmaier/Desktop/Code/Werewolf/src/Player.h /usr/include/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
  /usr/include/c++/14.2.1/iostream \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \

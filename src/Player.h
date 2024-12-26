@@ -12,13 +12,30 @@ public:
   size_t check_coll(const Vector2 pos);
   inline bool check_done_coll(const Vector2 pos){return CheckCollisionPointRec(pos,done) ? valid_done() : false;}
   std::string *get_names(){return strings;}
+  //return 0 for nothing 1 for left 2 for right
+  int coll_time(Vector2 pos);
+  void draw_time();
+  void update_minutes();
+  void update_seconds();
+  //literally no idea how they got flipped or how to fix
+  inline int get_minutes(){return std::stoi(seconds);}
+  inline int get_seconds(){return std::stoi(minutes);}
+  inline bool time_valid(){return get_seconds() <60 && (std::stoi(minutes) || std::stoi(seconds));}
 private:
   Rectangle recs[10];
   std::string strings[10];
-  Vector2 GetCenteredTextPosition(const Rectangle rec, const std::string &text, const size_t fontSize);
   Rectangle done;
+  bool on_left;
+  bool on_right;
+  Rectangle left_time;
+  Rectangle right_time;
+  std::string minutes;
+  std::string seconds;
+  Vector2 GetCenteredTextPosition(const Rectangle rec, const std::string &text, const size_t fontSize);
   void drawFooter();
   bool valid_done();
-};
+  //bool is_sixity(char c);
+  //bool is_ten(std::string &str);
+  };
 
 #endif

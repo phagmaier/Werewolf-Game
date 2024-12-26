@@ -7,6 +7,7 @@ set(SOURCES
 src/main.cpp
 src/Player.cpp
 src/Selector.cpp
+src/Timer.cpp
 )
 add_executable(runme ${SOURCES})
 target_link_libraries(runme raylib)

@@ -22,6 +22,8 @@ Player::Player(const size_t width, const size_t height){
       strings[count] = "";
       ++count;
     }
+
+
   }
   
   const float done_x = width/2;
@@ -30,6 +32,14 @@ Player::Player(const size_t width, const size_t height){
   const float done_width = 150;
   const float done_height = 60;
   done = Rectangle{done_x, y, done_width, done_height};
+
+  //NEW FOR TIMER
+  on_left = false;
+  on_right = false;
+  left_time = Rectangle{done.x - 100,done.y,50,50};
+  right_time = Rectangle{left_time.x+left_time.width - 100,done.y,50,50};
+  minutes = "";
+  seconds = "";
 }
 
 Vector2 Player::GetCenteredTextPosition(const Rectangle rec, const std::string &text, const size_t fontSize){
@@ -63,6 +73,7 @@ void Player::draw_players(){
     }
   }
   drawFooter();
+  draw_time();
 }
 
 void Player::drawFooter(){
@@ -97,7 +108,7 @@ bool Player::valid_done(){
       ++count;
     }
   }
-  return count >=5;
+  return count >=5 && time_valid();
 }
 
 void Player::update_string(const size_t pos){
@@ -109,9 +120,84 @@ void Player::update_string(const size_t pos){
     str->pop_back();
   }
   
-  // Handle any other key presses (excluding backspace)
   while (key > 0 && str->size()<10) {
-    *str += (char)key; // Add the character to the string
-    key = GetCharPressed(); // Check the next character
+    *str += (char)key;
+    key = GetCharPressed(); 
   }
 }
+
+//return 0 for nothing 1 for left 2 for right
+int Player::coll_time(Vector2 pos){
+  int result = 0;
+  if (CheckCollisionPointRec(pos,left_time)){
+    result = 1;
+  }
+  else if (CheckCollisionPointRec(pos,right_time)){
+    result = 2;
+  }
+  return result;
+}
+
+void Player::draw_time() {
+  // Concatenate the minutes and colon properly
+  
+  // Draw the left time rectangle (for minutes and colon)
+  DrawRectangleRec(left_time, LIGHTGRAY);  
+  DrawRectangleLinesEx(left_time, 1, BLACK);
+  
+  // Adjust text position to be centered inside the left_time rectangle
+  std::string str = minutes.size() ? minutes.c_str() : "00";
+  if (str.size()==1){
+    str.push_back('0');
+  }
+  //Vector2 minutes_pos = GetCenteredTextPosition(left_time, minutes, 30);
+  //DrawText(str.c_str(), minutes_pos.x-20, minutes_pos.y-10, 30, BLUE);
+  DrawText(str.c_str(), left_time.x+5, left_time.y+10, 30, BLUE);
+  
+  // Draw the right time rectangle (for seconds)
+  DrawRectangleRec(right_time, LIGHTGRAY);  
+  DrawRectangleLinesEx(right_time, 1, BLACK);
+  
+  // Adjust text position to be centered inside the right_time rectangle
+  str = seconds.size() ? seconds.c_str() : "00";
+  if (str.size()==1){
+    str.push_back('0');
+  }
+  //Vector2 seconds_pos = GetCenteredTextPosition(right_time, seconds, 30);
+
+  //DrawText(str.c_str(), seconds_pos.x-20, seconds_pos.y-10, 30, BLUE);
+  DrawText(str.c_str(), right_time.x+5, right_time.y+10, 30, BLUE);
+
+
+  DrawText("TIME:", left_time.x-170, left_time.y+10,30,BLUE);
+}
+
+
+void Player::update_minutes() {
+  int key = GetCharPressed();
+
+  // Handle backspace
+  if (IsKeyPressed(KEY_BACKSPACE) && minutes.size()) {
+    minutes.pop_back();
+  }
+
+  // Handle digit key press
+  if (key >= KEY_ZERO && key <= KEY_NINE && minutes.size() < 2) {
+    minutes.push_back((char)key);
+  }
+}
+
+void Player::update_seconds() {
+  int key = GetCharPressed();
+
+  // Handle backspace
+  if (IsKeyPressed(KEY_BACKSPACE) && seconds.size()) {
+    seconds.pop_back(); 
+  }
+
+  // Handle digit key press
+  if (key >= KEY_ZERO && key <= KEY_NINE && seconds.size() < 2) {
+    seconds.push_back((char)key); 
+  }
+}
+

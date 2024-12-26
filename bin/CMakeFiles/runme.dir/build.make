@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/phagmaier/Desktop/Code/Game
+CMAKE_SOURCE_DIR = /home/phagmaier/Desktop/Code/Werewolf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/phagmaier/Desktop/Code/Game/bin
+CMAKE_BINARY_DIR = /home/phagmaier/Desktop/Code/Werewolf/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runme.dir/depend.make
@@ -73,52 +73,67 @@ CMakeFiles/runme.dir/codegen:
 .PHONY : CMakeFiles/runme.dir/codegen
 
 CMakeFiles/runme.dir/src/main.cpp.o: CMakeFiles/runme.dir/flags.make
-CMakeFiles/runme.dir/src/main.cpp.o: /home/phagmaier/Desktop/Code/Game/src/main.cpp
+CMakeFiles/runme.dir/src/main.cpp.o: /home/phagmaier/Desktop/Code/Werewolf/src/main.cpp
 CMakeFiles/runme.dir/src/main.cpp.o: CMakeFiles/runme.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runme.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/main.cpp.o -MF CMakeFiles/runme.dir/src/main.cpp.o.d -o CMakeFiles/runme.dir/src/main.cpp.o -c /home/phagmaier/Desktop/Code/Game/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runme.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/main.cpp.o -MF CMakeFiles/runme.dir/src/main.cpp.o.d -o CMakeFiles/runme.dir/src/main.cpp.o -c /home/phagmaier/Desktop/Code/Werewolf/src/main.cpp
 
 CMakeFiles/runme.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runme.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Game/src/main.cpp > CMakeFiles/runme.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Werewolf/src/main.cpp > CMakeFiles/runme.dir/src/main.cpp.i
 
 CMakeFiles/runme.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runme.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Game/src/main.cpp -o CMakeFiles/runme.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Werewolf/src/main.cpp -o CMakeFiles/runme.dir/src/main.cpp.s
 
 CMakeFiles/runme.dir/src/Player.cpp.o: CMakeFiles/runme.dir/flags.make
-CMakeFiles/runme.dir/src/Player.cpp.o: /home/phagmaier/Desktop/Code/Game/src/Player.cpp
+CMakeFiles/runme.dir/src/Player.cpp.o: /home/phagmaier/Desktop/Code/Werewolf/src/Player.cpp
 CMakeFiles/runme.dir/src/Player.cpp.o: CMakeFiles/runme.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runme.dir/src/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/Player.cpp.o -MF CMakeFiles/runme.dir/src/Player.cpp.o.d -o CMakeFiles/runme.dir/src/Player.cpp.o -c /home/phagmaier/Desktop/Code/Game/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runme.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/Player.cpp.o -MF CMakeFiles/runme.dir/src/Player.cpp.o.d -o CMakeFiles/runme.dir/src/Player.cpp.o -c /home/phagmaier/Desktop/Code/Werewolf/src/Player.cpp
 
 CMakeFiles/runme.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runme.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Game/src/Player.cpp > CMakeFiles/runme.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Werewolf/src/Player.cpp > CMakeFiles/runme.dir/src/Player.cpp.i
 
 CMakeFiles/runme.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runme.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Game/src/Player.cpp -o CMakeFiles/runme.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Werewolf/src/Player.cpp -o CMakeFiles/runme.dir/src/Player.cpp.s
 
 CMakeFiles/runme.dir/src/Selector.cpp.o: CMakeFiles/runme.dir/flags.make
-CMakeFiles/runme.dir/src/Selector.cpp.o: /home/phagmaier/Desktop/Code/Game/src/Selector.cpp
+CMakeFiles/runme.dir/src/Selector.cpp.o: /home/phagmaier/Desktop/Code/Werewolf/src/Selector.cpp
 CMakeFiles/runme.dir/src/Selector.cpp.o: CMakeFiles/runme.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runme.dir/src/Selector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/Selector.cpp.o -MF CMakeFiles/runme.dir/src/Selector.cpp.o.d -o CMakeFiles/runme.dir/src/Selector.cpp.o -c /home/phagmaier/Desktop/Code/Game/src/Selector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runme.dir/src/Selector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/Selector.cpp.o -MF CMakeFiles/runme.dir/src/Selector.cpp.o.d -o CMakeFiles/runme.dir/src/Selector.cpp.o -c /home/phagmaier/Desktop/Code/Werewolf/src/Selector.cpp
 
 CMakeFiles/runme.dir/src/Selector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runme.dir/src/Selector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Game/src/Selector.cpp > CMakeFiles/runme.dir/src/Selector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Werewolf/src/Selector.cpp > CMakeFiles/runme.dir/src/Selector.cpp.i
 
 CMakeFiles/runme.dir/src/Selector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runme.dir/src/Selector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Game/src/Selector.cpp -o CMakeFiles/runme.dir/src/Selector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Werewolf/src/Selector.cpp -o CMakeFiles/runme.dir/src/Selector.cpp.s
+
+CMakeFiles/runme.dir/src/Timer.cpp.o: CMakeFiles/runme.dir/flags.make
+CMakeFiles/runme.dir/src/Timer.cpp.o: /home/phagmaier/Desktop/Code/Werewolf/src/Timer.cpp
+CMakeFiles/runme.dir/src/Timer.cpp.o: CMakeFiles/runme.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runme.dir/src/Timer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runme.dir/src/Timer.cpp.o -MF CMakeFiles/runme.dir/src/Timer.cpp.o.d -o CMakeFiles/runme.dir/src/Timer.cpp.o -c /home/phagmaier/Desktop/Code/Werewolf/src/Timer.cpp
+
+CMakeFiles/runme.dir/src/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runme.dir/src/Timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phagmaier/Desktop/Code/Werewolf/src/Timer.cpp > CMakeFiles/runme.dir/src/Timer.cpp.i
+
+CMakeFiles/runme.dir/src/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runme.dir/src/Timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phagmaier/Desktop/Code/Werewolf/src/Timer.cpp -o CMakeFiles/runme.dir/src/Timer.cpp.s
 
 # Object files for target runme
 runme_OBJECTS = \
 "CMakeFiles/runme.dir/src/main.cpp.o" \
 "CMakeFiles/runme.dir/src/Player.cpp.o" \
-"CMakeFiles/runme.dir/src/Selector.cpp.o"
+"CMakeFiles/runme.dir/src/Selector.cpp.o" \
+"CMakeFiles/runme.dir/src/Timer.cpp.o"
 
 # External object files for target runme
 runme_EXTERNAL_OBJECTS =
@@ -126,11 +141,12 @@ runme_EXTERNAL_OBJECTS =
 runme: CMakeFiles/runme.dir/src/main.cpp.o
 runme: CMakeFiles/runme.dir/src/Player.cpp.o
 runme: CMakeFiles/runme.dir/src/Selector.cpp.o
+runme: CMakeFiles/runme.dir/src/Timer.cpp.o
 runme: CMakeFiles/runme.dir/build.make
 runme: CMakeFiles/runme.dir/compiler_depend.ts
 runme: /usr/lib/libraylib.so
 runme: CMakeFiles/runme.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable runme"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable runme"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runme.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +158,6 @@ CMakeFiles/runme.dir/clean:
 .PHONY : CMakeFiles/runme.dir/clean
 
 CMakeFiles/runme.dir/depend:
-	cd /home/phagmaier/Desktop/Code/Game/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phagmaier/Desktop/Code/Game /home/phagmaier/Desktop/Code/Game /home/phagmaier/Desktop/Code/Game/bin /home/phagmaier/Desktop/Code/Game/bin /home/phagmaier/Desktop/Code/Game/bin/CMakeFiles/runme.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/phagmaier/Desktop/Code/Werewolf/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phagmaier/Desktop/Code/Werewolf /home/phagmaier/Desktop/Code/Werewolf /home/phagmaier/Desktop/Code/Werewolf/bin /home/phagmaier/Desktop/Code/Werewolf/bin /home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles/runme.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/runme.dir/depend
 

@@ -1,3 +1,3 @@
-/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles/runme.dir
-/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles/edit_cache.dir
-/home/phagmaier/Desktop/Code/Game/bin/CMakeFiles/rebuild_cache.dir
+/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles/runme.dir
+/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles/edit_cache.dir
+/home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles/rebuild_cache.dir

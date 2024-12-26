@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/runme.dir/src/Player.cpp.o.d"
   "CMakeFiles/runme.dir/src/Selector.cpp.o"
   "CMakeFiles/runme.dir/src/Selector.cpp.o.d"
+  "CMakeFiles/runme.dir/src/Timer.cpp.o"
+  "CMakeFiles/runme.dir/src/Timer.cpp.o.d"
   "CMakeFiles/runme.dir/src/main.cpp.o"
   "CMakeFiles/runme.dir/src/main.cpp.o.d"
   "runme"

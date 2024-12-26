@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/phagmaier/Desktop/Code/Game
+CMAKE_SOURCE_DIR = /home/phagmaier/Desktop/Code/Werewolf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/phagmaier/Desktop/Code/Game/bin
+CMAKE_BINARY_DIR = /home/phagmaier/Desktop/Code/Werewolf/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/phagmaier/Desktop/Code/Game/bin/CMakeFiles /home/phagmaier/Desktop/Code/Game/bin//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles /home/phagmaier/Desktop/Code/Werewolf/bin//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/phagmaier/Desktop/Code/Game/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/phagmaier/Desktop/Code/Werewolf/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ src/Selector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runme.dir/build.make CMakeFiles/runme.dir/src/Selector.cpp.s
 .PHONY : src/Selector.cpp.s
 
+src/Timer.o: src/Timer.cpp.o
+.PHONY : src/Timer.o
+
+# target to build an object file
+src/Timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runme.dir/build.make CMakeFiles/runme.dir/src/Timer.cpp.o
+.PHONY : src/Timer.cpp.o
+
+src/Timer.i: src/Timer.cpp.i
+.PHONY : src/Timer.i
+
+# target to preprocess a source file
+src/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runme.dir/build.make CMakeFiles/runme.dir/src/Timer.cpp.i
+.PHONY : src/Timer.cpp.i
+
+src/Timer.s: src/Timer.cpp.s
+.PHONY : src/Timer.s
+
+# target to generate assembly for a file
+src/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runme.dir/build.make CMakeFiles/runme.dir/src/Timer.cpp.s
+.PHONY : src/Timer.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/Selector.o"
 	@echo "... src/Selector.i"
 	@echo "... src/Selector.s"
+	@echo "... src/Timer.o"
+	@echo "... src/Timer.i"
+	@echo "... src/Timer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
