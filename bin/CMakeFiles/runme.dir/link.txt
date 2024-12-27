@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/runme.dir/link.d CMakeFiles/runme.dir/src/main.cpp.o CMakeFiles/runme.dir/src/Player.cpp.o CMakeFiles/runme.dir/src/Selector.cpp.o CMakeFiles/runme.dir/src/Timer.cpp.o -o runme  /usr/lib/libraylib.so -L/usr/lib -lraylib
+/usr/bin/c++ -O3 -Wl,--dependency-file=CMakeFiles/runme.dir/link.d CMakeFiles/runme.dir/src/main.cpp.o CMakeFiles/runme.dir/src/Player.cpp.o CMakeFiles/runme.dir/src/Selector.cpp.o CMakeFiles/runme.dir/src/Timer.cpp.o -o runme  /usr/lib/libraylib.so -L/usr/lib -lraylib

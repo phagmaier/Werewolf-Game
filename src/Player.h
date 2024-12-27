@@ -18,9 +18,9 @@ public:
   void update_minutes();
   void update_seconds();
   //literally no idea how they got flipped or how to fix
-  inline int get_minutes(){return std::stoi(seconds);}
-  inline int get_seconds(){return std::stoi(minutes);}
-  inline bool time_valid(){return get_seconds() <60 && (std::stoi(minutes) || std::stoi(seconds));}
+  inline int get_minutes(){return seconds.size() > 0 ? std::stoi(seconds) : 0;}
+  inline int get_seconds(){return minutes.size() > 0 ? std::stoi(minutes) : 0;};
+  inline bool time_valid(){return get_seconds() <60 && (get_seconds() || get_minutes());}
 private:
   Rectangle recs[10];
   std::string strings[10];

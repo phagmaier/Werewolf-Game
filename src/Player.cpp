@@ -152,7 +152,7 @@ void Player::draw_time() {
   }
   //Vector2 minutes_pos = GetCenteredTextPosition(left_time, minutes, 30);
   //DrawText(str.c_str(), minutes_pos.x-20, minutes_pos.y-10, 30, BLUE);
-  DrawText(str.c_str(), left_time.x+5, left_time.y+10, 30, BLUE);
+  DrawText(str.c_str(), left_time.x+7, left_time.y+10, 30, BLUE);
   
   // Draw the right time rectangle (for seconds)
   DrawRectangleRec(right_time, LIGHTGRAY);  
@@ -166,7 +166,7 @@ void Player::draw_time() {
   //Vector2 seconds_pos = GetCenteredTextPosition(right_time, seconds, 30);
 
   //DrawText(str.c_str(), seconds_pos.x-20, seconds_pos.y-10, 30, BLUE);
-  DrawText(str.c_str(), right_time.x+5, right_time.y+10, 30, BLUE);
+  DrawText(str.c_str(), right_time.x+7, right_time.y+10, 30, BLUE);
 
 
   DrawText("TIME:", left_time.x-170, left_time.y+10,30,BLUE);
@@ -201,3 +201,30 @@ void Player::update_seconds() {
   }
 }
 
+
+  /*
+int Player::get_minutes(){
+  size_t size = seconds.size();
+  if (!size){
+    return 0;
+  }
+  if (size==1){
+    return seconds[0] - '0';
+  }
+  else{
+    if (seconds[0] == '0'){
+      return seconds[1] -'0';
+    }
+    else{
+      return std::stoi(seconds);
+    }
+  }
+  return seconds.size() > 0 ? std::stoi(seconds) : 0;
+}
+*/
+
+/*
+int Player::get_seconds(){
+  return minutes.size() > 0 ? std::stoi(minutes) : 0;
+}
+*/

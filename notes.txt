@@ -1,0 +1,1 @@
+Need to take the front zero away from the minutes and text boxes
